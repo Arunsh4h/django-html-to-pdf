@@ -1,0 +1,1462 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+@font-face {
+  font-family: openSans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: openSans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: openSans-reg;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: openSans-semiBold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: DMSerifText-Reg;
+  src: url(../fonts/DMSerifText-Regular.ttf);
+}
+
+@media print {
+
+  html,
+  body {
+    overflow: visible;
+  }
+
+  body {
+    font-family: openSans-reg, sans-serif;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  #tfoot::after {
+    position: absolute;
+    content: "1";
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .mt-30 {
+    margin-top: 100px;
+  }
+}
+
+@page {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+}
+
+*,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+body,
+p {
+  font-family: openSans-reg, sans-serif;
+  font-size: 14px;
+  color: #434971;
+  position: relative;
+}
+
+table td,
+table th {
+  overflow: hidden;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+table {
+  border-collapse: collapse;
+  /*^^^ merges adjacent cell and table borders (so table height != sum of row heights!)*/
+  border-spacing: 0 0;
+  /*removes space between cells*/
+  -webkit-border-vertical-spacing: 0;
+  /*^^^ removes Chrome's border-spacing (sort of redundant with border-spacing: 0 0;)*/
+}
+
+table>thead {
+  vertical-align: bottom;
+  /*^^^ affects the height of rows that get broken by page breaks*/
+}
+
+table>tbody {
+  vertical-align: top;
+  /*^^^ affects the height of rows that get broken by page breaks*/
+}
+
+table>*>*>td,
+table>*>*>th {
+  padding-top: 0;
+  /*cancels out browser's default cell padding*/
+  padding-bottom: 0;
+  /*cancels out browser's default cell padding*/
+}
+
+.register-caregiver {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  height: auto;
+  justify-content: flex-start;
+
+}
+
+.register-caregiver a,
+.register-caregiver span {
+  font-size: 14px;
+  line-height: 20px;
+
+}
+
+.Header {
+  background: #5260da;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header .Logo_Wrap img {
+  width: 130px;
+  display: block;
+}
+
+.Header .DateWrap p {
+  color: #ffffffe0;
+}
+
+.page-header,
+.page-header-space {
+  margin-bottom: 100px;
+}
+
+.page-footer,
+.page-footer-space {
+  height: 60px;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.page-number {
+  font-size: 10px;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.top-header {
+  background-color: #6472e4;
+  padding: 34px 50px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.top-header img {
+  height: 16px;
+  margin-top: 5px;
+}
+
+.sub-header {
+  background-color: #f0f1fc;
+  padding: 13px 50px;
+  color: #6472e4;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 500;
+}
+
+
+.emptystarsdraw img.img-star {
+  width: 25px;
+  height: 25px;
+}
+
+.emptystarsdraw {
+  display: flex;
+  justify-content: center;
+}
+
+.page-break {
+  page-break-after: always;
+  min-height: 900px;
+}
+
+.table-body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mt-30 {
+  margin-top: 100px;
+}
+
+.branch-rating {
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.AgencyName {
+  padding: 15px 25px;
+  background: #f0f1fb;
+  box-sizing: border-box;
+}
+
+.AgencyName p {
+  color: #6472e4;
+}
+
+.Padding_Wrap {
+  padding: 0px 25px;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+.HeadingWrap {
+  color: #434971;
+  font-family: DMSerifText-Reg, serif !important;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.ProGramSummary .Flex-Wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProGramSummary .Left_Wrap {
+  width: 30%;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box {
+  background: #5260da;
+  padding: 25px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box .Date {
+  color: #ffffffc4;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box h6 {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: openSans-bold;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 5px 0 20px;
+  font-family: openSans-bold;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box ul li {
+  color: #ffffffc4;
+  color: #ffffffc4;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box ul li p {
+  color: #ffffffc4;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: openSans-semiBold;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box ul li .RewardRedeemed {
+  font-family: openSans-semiBold;
+  font-size: 13px;
+}
+
+.ProGramSummary .Left_Wrap .Color_Box ul li:last-child {
+  margin-bottom: 0;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 25px 20px;
+  margin: 25px 0;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing li {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 45px;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing li:last-child {
+  margin-bottom: 0;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing img {
+  width: 45px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing .IncRep {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing .Txt {
+  color: #434971;
+  font-weight: 600;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing .Txt p {
+  font-size: 12px;
+}
+
+.ProGramSummary .Left_Wrap .LeftMiddle .Listing .Txt h2 {
+  font-size: 29.4px;
+  margin-top: 0px;
+  font-family: openSans-bold;
+}
+
+.ProGramSummary .Left_Wrap .RatingWrap {
+  background: #fcf9c3;
+  padding: 25px 10px;
+  border: 2px solid #fcf9c3;
+  border-radius: 10px;
+}
+
+.ProGramSummary .Left_Wrap .RatingWrap p {
+  text-align: center;
+  color: #434971;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 18px;
+  font-family: openSans-semiBold;
+}
+
+.ProGramSummary .Left_Wrap .RatingWrap p .RatingNumber {
+  font-family: openSans-bold;
+}
+
+.ProGramSummary .Left_Wrap .RatingWrap ul {
+  display: flex;
+  justify-content: center;
+}
+
+.ProGramSummary .Left_Wrap .RatingWrap ul li {
+  margin: 0 5px;
+}
+
+.ProGramSummary .Left_Wrap .RatingWrap ul li img {
+  width: 25px;
+}
+
+.ProGramSummary .Right_Wrap {
+  width: 65%;
+  padding-right: 0px;
+}
+
+.ProGramSummary .Right_Wrap .LineChart {
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.ProGramSummary .Right_Wrap .LineChart #myChart,
+.ProGramSummary .Right_Wrap .LineChart #myChart1 {
+  width: 100% !important;
+  height: 180px !important;
+}
+
+.ProGramSummary .Right_Wrap .LineChart .LineChatHead {
+  margin-bottom: 20px;
+}
+
+.ProGramSummary .Right_Wrap .LineChart .LineChatHead ul {
+  display: flex;
+}
+
+.ProGramSummary .Right_Wrap .LineChart .LineChatHead ul li {
+  position: relative;
+  font-size: 16px;
+  color: #434971;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+.ProGramSummary .Right_Wrap .LineChart .LineChatHead ul li:before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #3fe4b7;
+  position: absolute;
+  left: 0;
+  border-radius: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.ProGramSummary .Right_Wrap .LineChart .LineChatHead ul li:last-child:before {
+  background: #00adee;
+}
+
+.ProGramSummary .Right_Wrap .Redemptions_Period {
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.ProGramSummary .Right_Wrap .Redemptions_Period .Heading_rp {
+  color: #434971;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 11.7px;
+  text-align: left;
+  margin-left: 11px;
+  margin-bottom: 14px;
+  font-family: 'openSans-bold';
+}
+
+.ProGramSummary .Right_Wrap .Redemptions_Period ul {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.ProGramSummary .Right_Wrap .Redemptions_Period ul li {
+  color: #434971;
+  text-align: center;
+  margin: 0 13px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  line-height: 2.32;
+}
+
+.ProGramSummary .Right_Wrap .Redemptions_Period ul li p {
+  font-size: 11px;
+  /* font-family: openSans-bold; */
+  font-family: 'openSans-semiBold';
+}
+
+#right-redemption-input {
+  font-size: 16.7px;
+}
+
+table.table2 th,
+td {
+  text-align: left;
+  font-size: 15px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+table.table2 th {
+  font-size: 10px;
+}
+
+.space3 {
+  padding: 2px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right {
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 25px 0;
+  color: #434971;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing .WH {
+  width: 60%;
+  margin-bottom: 0;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing .WH.H {
+  width: 40%;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 50px;
+  margin-top: 6px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li:last-child {
+  margin-bottom: 0;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li .ListLeft {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li .ListLeft h2 {
+  font-family: openSans-bold;
+  font-size: 29.4px;
+  width: 75px;
+  text-align: center;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li .ListLeft span {
+  margin-left: 25px;
+  font-size: 12px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li .ListRight {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.ProGramSummary .Right_Wrap .H_txt {
+  color: #a5a5a5;
+  font-style: italic;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Middle_Listing li .ListRight img {
+  width: 100px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .ListRight .Per {
+  font-size: 20px;
+  font-weight: 700;
+  width: 30%;
+  text-align: center;
+  padding-left: 15px;
+  width: 80px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .LeftSideWrapMiddle {
+  width: 50%;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .RightSideMiddleWrapList {
+  width: 50%;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .ListRight .Chart tr {
+  display: block;
+  padding-bottom: 12px;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .ListRight .Chart tr:last-child {
+  padding-bottom: 0;
+}
+
+.FirstSectionNew {
+  padding-top: 0;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .ListRight .Per.Green {
+  color: #3ae3a9;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .ListRight .Per.Red {
+  color: #f37a7c;
+}
+
+.ProGramSummary .Right_Wrap .Middle_Wrap_Right .Per i {
+  font-size: 20px;
+}
+
+.LineChartBottom ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.LineChartBottom li {
+  font-size: 11px;
+  color: #434971;
+  font-weight: 600;
+  font-family: openSans-semiBold;
+}
+
+.LineChartBottom li span {
+  font-family: openSans-bold;
+}
+
+.HeadingSubNew {
+  color: #434971;
+  font-family: DMSerifText-Reg, serif !important;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.Table table {
+  width: 100%;
+}
+
+.ProGramSummary.Padding_Wrap.SecondSection .HeadingSubNew {
+  margin-bottom: 20px;
+}
+
+.ProGramSummary.Padding_Wrap.SecondSection .HeadingSubNew.HeadingSubNewBranch {
+  margin-bottom: 10px;
+}
+
+.ProGramSummary.Padding_Wrap.SecondSection {
+  padding-bottom: 20px;
+}
+
+.Table table thead th {
+  border-bottom: 1px solid #434971;
+}
+
+.Table table th:first-child,
+.Table table tr td:first-child {
+  text-align: left;
+}
+
+.Table table th:nth-child(4),
+.Table table tr td:nth-child(4) {
+  background: #f0f1fb;
+}
+
+#branch-table1 tbody tr:last-child {
+  background: #f0f1fb;
+}
+
+.Table table#branch-table1 tr td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.CaregiverIncentive_content .ChartBlock.PieChart h2 {
+  margin-bottom: 0px;
+}
+
+.Table table tr td:first-child {
+  text-decoration: underline !important;
+}
+
+.Table table th span {
+  display: block;
+  color: #a5a5a5;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.Table table th,
+.Table table td,
+Table table td a {
+  color: #434971;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+.Table table tr td {
+  text-align: center;
+}
+
+Table table td a {
+  text-decoration: underline !important;
+  padding: 0;
+}
+
+.Table table tr.TotalsBottom,
+table#branch-table1 tbody tr:last-child {
+  background: #f0f1fb;
+}
+
+.Table table tr.TotalsBottom td,
+table#branch-table1 tbody tr:last-child td,
+table#branch-table1 tbody tr:last-child td a {
+  color: #5260da;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: openSans-bold;
+  text-decoration: none !important;
+}
+
+.CaregiverIncentiveLong {
+  margin-top: 30px;
+  page-break-after: always;
+
+}
+
+.CaregiverIncentiveShort {
+  margin-top: 30px;
+
+}
+
+.CaregiverIncentiveContainer {
+  page-break-inside: avoid;
+}
+
+.CaregiverIncentive_content {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.CaregiverIncentive_content .ChartBlock {
+  width: 50%;
+  overflow: hidden;
+}
+
+.CaregiverIncentive_content .ChartBlock.PieChart {
+  padding-right: 20px;
+}
+
+.CaregiverIncentive_content .ChartBlock.PieChart #container {
+  overflow: unset !important;
+  width: 100% !important;
+}
+
+.CaregiverIncentive_content .ChartBlock.LineChart {
+  padding-left: 20px;
+}
+
+.CaregiverIncentive_content .ChartBlock h2 {
+  font-size: 16px;
+  background: #e6e7e8;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: openSans-semiBold;
+}
+
+.CaregiverIncentive_content .ChartBlock.LineChart #LineChartN {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+.CaregiverIncentive_content .ChartBlock h2 span {
+  display: inline-block;
+  margin-top: 2px;
+  color: #a5a5a5;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+  font-family: openSans-reg;
+}
+
+.CaregiverIncentive .HeadingSubNew {
+  margin-bottom: 30px;
+}
+
+.LegendBottom {
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin-top: 0px;
+  page-break-inside: avoid;
+}
+
+.LegendBottom h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: openSans-bold;
+}
+
+.LegendBottom ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.LegendBottom ul li {
+  width: 21%;
+  margin: 5px 0 5px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 18px;
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+.LegendBottom ul li:after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: var(--category-color);
+  position: absolute;
+  left: 0;
+  border-radius: 50px;
+  top: 5px;
+}
+
+.LegendBottom ul li span {
+  font-family: openSans-bold;
+}
+
+.Reports {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #434971;
+  padding: 10px 0 25px 0;
+  margin: 0 0 15px 0;
+  page-break-inside: avoid;
+}
+
+.IncidentReports .Reports:last-child {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.RiskReports .Reports:last-child {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.first_risk_report {
+  page-break-inside: avoid;
+}
+
+.Reports .LeftSide {
+  width: 30%;
+  font-weight: 600;
+}
+
+.Reports .LeftSide .Date {}
+
+.Reports .LeftSide p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.Reports .LeftSide p span {
+  color: #a5a5a5;
+}
+
+.Reports .LeftSide p .Red {
+  color: #f37a7c;
+}
+
+.Reports .LeftSide p .Yellow {
+  color: #fca51a;
+}
+
+.Reports .RightSide {
+  width: 70%;
+  padding-left: 30px;
+}
+
+.Reports .RightSide p {
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 13px;
+}
+
+.Reports .RightSide h5 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Padding_Wrap.ThirdSection {
+  margin-bottom: 360px;
+}
+
+.MiddleHEading {
+  margin-bottom: 20px;
+  color: #434971;
+  font-family: DMSerifText-Reg, serif !important;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.CADProcess .LeftMiddle,
+.CADProcess .Middle_Wrap_Right {
+  margin: 0px !important;
+}
+
+.ProGramSummary .CADProcess .Left_Wrap .LeftMiddle .Listing li:first-child {
+  background: #5260da;
+  color: #fff;
+  position: relative;
+  margin-left: -21px;
+  margin-right: -21px;
+  top: -25px;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  padding: 25px;
+  box-sizing: border-box;
+  padding-left: 75px;
+}
+
+.ProGramSummary.Padding_Wrap.FourthSection .Left_Wrap .LeftMiddle .Listing li {
+  margin-bottom: 30px;
+}
+
+.ProGramSummary.Padding_Wrap.FourthSection .Left_Wrap .LeftMiddle .Listing li:last-child {
+  margin-bottom: 0;
+}
+
+.ProGramSummary.Padding_Wrap.FourthSection .CADProcess .Left_Wrap .LeftMiddle .Listing li:first-child {
+  margin-bottom: 0;
+}
+
+.ProGramSummary .CADProcess .Left_Wrap .LeftMiddle .Listing li:first-child img {
+  left: 25px;
+  top: 25px;
+}
+
+.ProGramSummary .CADProcess .Left_Wrap .LeftMiddle .Listing li:first-child .Txt p,
+.ProGramSummary .CADProcess .Left_Wrap .LeftMiddle .Listing li:first-child .Txt h2 {
+  color: #fff;
+}
+
+.Heading_Wrap_Star {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Heading_Wrap_Star .Rating ul.StarIco {
+  display: flex;
+}
+
+.Heading_Wrap_Star .Rating ul.StarIco li {
+  margin: 0 2px;
+}
+
+.Heading_Wrap_Star .Rating ul.StarIco li img {
+  width: 23px;
+}
+
+.Heading_Wrap_Star .RatingWithHeading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Heading_Wrap_Star .RatingWithHeading h5 {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.Heading_Wrap_Star .RatingTxt {
+  color: #a5a5a5;
+  font-style: italic;
+  font-size: 11px;
+  text-align: right;
+}
+
+.Heading_Wrap_Star.Last .HeadingWrap {
+  margin-bottom: 5px;
+}
+
+.Heading_Wrap_Star .Vac {
+  display: flex;
+  align-items: center;
+}
+
+.Heading_Wrap_Star .LeftWrapHead li {
+  color: #a5a5a5;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: openSans-semiBold;
+}
+
+.Heading_Wrap_Star .LeftWrapHead .Vac li:first-child {
+  color: #3fe4b7;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 48px;
+  font-family: openSans-bold;
+}
+
+.Heading_Wrap_Star .InfoLast {
+  display: flex;
+  margin-top: 8px;
+}
+
+.Heading_Wrap_Star .InfoLast li {
+  margin-right: 25px;
+}
+
+.Heading_Wrap_Star.Last {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+}
+
+.Caregiver_List {
+  margin-top: 49px;
+}
+
+.Caregiver_List table {
+  width: 100%;
+}
+
+.Caregiver_List table thead th .Span {
+  display: inline-flex;
+}
+
+.Caregiver_List table thead th .Span img {
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  margin-right: 3px;
+}
+
+.Caregiver_List table thead th .Head {
+  font-family: openSans-light;
+  display: block;
+  color: #a5a5a5;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.Caregiver_List table tbody tr td,
+.Caregiver_List table thead tr th {
+  text-align: center;
+  padding: 7px 10px;
+  box-sizing: border-box;
+}
+
+.Caregiver_List table tbody tr td {
+  border-bottom: 1px solid #ccc;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: openSans-semiBold;
+}
+
+
+.Caregiver_List table tbody tr td:first-child,
+.Caregiver_List table thead tr th:first-child {
+  text-align: left;
+  white-space: nowrap !important;
+}
+
+
+.Caregiver_List table thead tr:nth-child(2) th {
+  padding-top: 0px;
+}
+
+.Caregiver_List table thead tr th:nth-child(3),
+.Caregiver_List table thead tr th:nth-child(4),
+.Caregiver_List table thead tr th:nth-child(5),
+.Caregiver_List table tbody tr td:nth-child(3),
+.Caregiver_List table tbody tr td:nth-child(4),
+.Caregiver_List table tbody tr td:nth-child(5) {
+  background: #f0f1fb;
+
+}
+
+.Caregiver_List table thead tr th {
+  padding-top: 20px;
+  vertical-align: baseline;
+  font-size: 13px;
+  font-family: openSans-bold;
+}
+
+.Caregiver_List table tbody tr td:first-child i {
+  color: #5260da;
+  margin-left: 10px;
+}
+
+.Caregiver_List table tbody tr td.Circle i {
+  color: #3fe4b7;
+  font-size: 10px;
+}
+
+.Caregiver_List p.CopyRightTxt {
+  margin-top: 20px;
+}
+
+.MIddleF {
+  margin: 50px 0;
+}
+
+.MIddleF ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MIddleF ul li {
+  width: 20%;
+  text-align: center;
+}
+
+.MIddleF ul li h2 {
+  font-size: 32px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: openSans-bold;
+}
+
+.MIddleF ul li h2 img {
+  width: 65px;
+  margin-right: 10px;
+}
+
+.MIddleF ul li .Par {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: openSans-semibold;
+}
+
+.MIddleF ul li .Par span {
+  font-family: openSans-reg;
+  display: block;
+  font-style: italic;
+  color: #a5a5a5;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.MIddleF ul li p {
+  font-weight: 600;
+}
+
+.MIddleF ul li .Pa {
+  font-style: italic;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.MIddleF ul li .Pa.Red {
+  color: #f37a7c;
+}
+
+.RecReviews {
+  display: flex;
+}
+
+.RecReviews .BgHead {
+  font-size: 14px;
+  background: #e6e7e8;
+  font-family: openSans-semibold;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.RecReviews .LeftWrap {
+  width: 40%;
+}
+
+.RecReviews .RightWrap {
+  width: 60%;
+  padding-left: 80px;
+}
+
+.RecReviews .LeftWrap .RatBoxTxt {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #434971;
+  margin-bottom: 10px;
+}
+
+.RecReviews .LeftWrap .RatBoxTxt:last-child {
+  margin-bottom: 0;
+  page-break-inside: avoid;
+}
+
+.RecReviews .LeftWrap .RatBoxTxt span {
+  color: #a5a5a5;
+  font-size: 12px;
+  font-family: openSans-semibold;
+}
+
+.RecReviews .LeftWrap .RatBoxTxt h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  font-family: openSans-semibold;
+}
+
+.RecReviews .LeftWrap .RatBoxTxt .Par {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.RecReviews .RightWrap .TopCat p {
+  text-align: right;
+  color: #a5a5a5;
+  font-style: italic;
+  font-size: 11px;
+  font-family: openSans-semibold;
+}
+
+.RecReviews .RightWrap .TopCat p sup {
+  font-size: 10px;
+}
+
+.RecReviews .RightWrap .TopCat p span {
+  display: block;
+  margin-top: 5px;
+}
+
+.RecReviews .LeftWrap .RatStar {
+  display: flex;
+  align-items: center;
+}
+
+.RecReviews .LeftWrap .RatStar ul {
+  display: flex;
+}
+
+.RecReviews .LeftWrap .RatStar li {
+  margin: 0 2px;
+}
+
+.RecReviews .LeftWrap .RatStar li:first-child {
+  margin-left: 0;
+}
+
+.RecReviews .LeftWrap .RatStar li img {
+  width: 20px;
+}
+
+.RecReviews .LeftWrap .RatStar h2 {
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: openSans-semibold;
+}
+
+.RecReviews .LeftWrap .TxtRev {
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.RecReviews .RightWrap ul {
+  margin-top: 20px;
+}
+
+.RecReviews .RightWrap ul li {
+  font-family: openSans-semibold;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #434971;
+}
+
+.RecReviews .RightWrap ul li p span {
+  color: #a5a5a5;
+}
+
+.RecReviews .RightWrap ul li:last-child {
+  justify-content: end;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.RecReviews .RightWrap ul li:last-child p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.RecReviews .RightWrap ul li:last-child p img {
+  width: 12px;
+}
+
+.no-reviews {
+  font-style: italic;
+  font-family: openSans-reg;
+}
+
+.top-star {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+span.stars,
+span.stars span {
+  display: block;
+  background: url(../images/star-o-white.svg) 0 0 repeat-x;
+  width: 125px;
+  /* width of a star multiplied by 5 */
+  height: 25px;
+  /* the height of the star */
+  background-size: 25px 25px;
+}
+
+
+
+span.stars span {
+  background-position: 0 0;
+  background-image: url(../images/star.svg);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.redeemption_rate {
+  background-color: #00acee;
+  position: absolute;
+  bottom: 46%;
+  right: 16px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  font-family: "openSans-bold";
+  font-weight: 800;
+  z-index: 2;
+}
+
+.redeemption_rate span {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.redeemption_rate span.percent_rate {
+  font-size: 22px;
+  line-height: 22px;
+  padding-right: 7px;
+}
+
+
+
+
+.page-header {
+  margin: 0 !important;
+}
+
+.Caregiver_List tr {
+  max-height: 34px;
+}
+
+
+.redemption-gift-card-dollar {
+  line-height: 1;
+  color: rgb(82, 96, 218);
+  font-family: 'openSans-bold';
+  font-size: 17.2px;
+}
+
+.redemption-gift-card-percentage {
+  line-height: 1;
+  min-width: 85px;
+  text-align: right;
+  display: inline-block;
+  font-style: italic;
+  font-size: 17.2px;
+}
+
+.right-redemption-input {
+  line-height: 1;
+  margin-right: 18px;
+}
