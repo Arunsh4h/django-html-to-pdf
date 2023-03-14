@@ -2,3 +2,109 @@
 ::1 - - [09/Mar/2023 11:10:48] "GET / HTTP/1.1" 200 -
 ::1 - - [09/Mar/2023 11:12:20] "GET / HTTP/1.1" 200 -
 ::1 - - [09/Mar/2023 11:14:57] "GET /?reportType=long HTTP/1.1" 200 -
+::1 - - [10/Mar/2023 07:02:54] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1290, in <module>
+    test(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1245, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1288, in server_bind
+    return super().server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+::1 - - [12/Mar/2023 23:46:08] "GET / HTTP/1.1" 200 -
+::1 - - [12/Mar/2023 23:47:53] "GET / HTTP/1.1" 200 -
+::1 - - [12/Mar/2023 23:56:42] "GET / HTTP/1.1" 200 -
+::1 - - [12/Mar/2023 23:59:54] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1290, in <module>
+    test(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1245, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1288, in server_bind
+    return super().server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1290, in <module>
+    test(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1245, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1288, in server_bind
+    return super().server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1290, in <module>
+    test(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1245, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1288, in server_bind
+    return super().server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1290, in <module>
+    test(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1245, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 1288, in server_bind
+    return super().server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+::1 - - [13/Mar/2023 03:19:43] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:28:10] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:28:10] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:28:10] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:28:10] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:28:10] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:37:30] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:48:29] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 03:50:25] "GET / HTTP/1.1" 200 -
+::1 - - [13/Mar/2023 08:09:46] "GET / HTTP/1.1" 200 -
+::1 - - [14/Mar/2023 07:14:29] "GET / HTTP/1.1" 200 -

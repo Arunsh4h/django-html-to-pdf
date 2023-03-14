@@ -197,7 +197,7 @@
     <script src="{% static 'assets/js/jquery-3.4.1.min.js' %}"></script>
     <script src="{% static 'assets/js/highcharts.js' %}"></script>
     <script src="{% static 'assets/js/series-label.js' %}"></script>
-
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script>
       // Construct URLSearchParams object instance from current URL querystring
       let queryParams = new URLSearchParams(window.location.search);
@@ -240,7 +240,7 @@
     <!-- line chart First -->
     <script>
 
-      JSON_NAME = "{% static 'JSON/CareAdvantage-data.json' %}";
+      JSON_NAME = "{% static 'JSON/Arosa-data.json' %}";
       INCENTIVE_TO_TEXT = {
         "REGISTER": { text: "Register", color: "#5260DA" },
         "ADD_CARE_LOG_REPORT": { text: "Check In/Out", color: "#4AD2AD" },
@@ -498,7 +498,7 @@
           n += 1;
           var timeoutDuration = 500;
 
-          if (clientName == 'CapRock')
+          if (clientName == 'Care Advantage', ' CapRock')
             timeoutDuration = 9000;
           // If the process takes too much time, run a timeout to allow interaction with the browser
           if (new Date() - time > timeoutDuration) {
